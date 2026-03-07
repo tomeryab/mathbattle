@@ -78,7 +78,7 @@ export default function QuestionPanel({ question, questionIndex, totalQuestions,
             exit={{ scale: 1.1, opacity: 0 }}
             className="bg-white rounded-3xl shadow-2xl p-8 mb-6 text-center"
           >
-            <p className="text-2xl font-black text-gray-800 leading-relaxed">{question.question}</p>
+            <p className="text-2xl font-black text-gray-800 leading-relaxed" dir="ltr">{question.question}</p>
           </motion.div>
         </AnimatePresence>
 
