@@ -98,6 +98,7 @@ export default function QuestionPanel({ question, questionIndex, totalQuestions,
                 onClick={() => handleAnswer(opt)}
                 disabled={answered}
                 className={`${btnClass} rounded-2xl p-5 text-xl font-black shadow-lg transition-all`}
+                dir="ltr"
               >
                 {opt}
               </motion.button>
