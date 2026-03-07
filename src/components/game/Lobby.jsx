@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { base44 } from "@/api/base44Client";
-import { TOPICS } from "./questionGenerator";
+import { TOPICS } from "../game/questionGenerator";
 import { Button } from "@/components/ui/button";
 import { Users, Copy, CheckCircle } from "lucide-react";
 

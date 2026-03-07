@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { createPageUrl } from "@/utils";
 import { useNavigate } from "react-router-dom";
-import { TOPICS } from "./questionGenerator";
+import { TOPICS } from "../game/questionGenerator";
 
 const DIFFICULTY_LABELS = { easy: "קל", medium: "בינוני", hard: "קשה" };
 
