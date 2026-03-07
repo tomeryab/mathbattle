@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Users, Zap, BookOpen } from "lucide-react";
+import { Trophy, Users, Zap, BookOpen, Target } from "lucide-react";
 
 const DIFFICULTY_LABELS = {
   easy: { label: "קל", color: "bg-green-100 text-green-700 border-green-300", emoji: "😊" },
