@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { base44 } from "@/api/base44Client";
-import { TOPICS } from "@/lib/questionGenerator";
-import { generateQuestions } from "@/lib/questionGenerator";
+import { TOPICS, generateQuestions } from "@/components/game/questionGenerator";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
