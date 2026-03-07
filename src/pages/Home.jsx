@@ -139,6 +139,16 @@ export default function Home() {
                   <span className="text-sm font-normal opacity-80">הזן קוד חדר</span>
                 </button>
               </div>
+              <button
+                onClick={() => navigate(createPageUrl("Solo"))}
+                className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform"
+              >
+                <Target size={28} />
+                <div className="text-right">
+                  <div>תרגול סולו</div>
+                  <div className="text-sm font-normal opacity-80">תרגל לבד בקצב שלך</div>
+                </div>
+              </button>
               <div className="flex gap-3 mt-2">
                 <div className="flex-1 bg-indigo-50 rounded-xl p-4 flex items-center gap-3">
                   <Zap className="text-indigo-500" size={24} />
