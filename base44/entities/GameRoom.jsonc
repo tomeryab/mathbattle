@@ -1,0 +1,93 @@
+{
+  "name": "GameRoom",
+  "type": "object",
+  "properties": {
+    "room_code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "waiting",
+        "playing",
+        "finished"
+      ],
+      "default": "waiting"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "addition_subtraction_100",
+        "addition_subtraction_1000",
+        "addition_carrying",
+        "subtraction_borrowing",
+        "multiplication_table",
+        "multiplication_2digit",
+        "division_basic",
+        "multiplication_division_relation",
+        "place_value",
+        "number_comparison",
+        "rounding",
+        "even_odd",
+        "perimeter",
+        "area_basic",
+        "time",
+        "money",
+        "fractions_basic",
+        "fractions_comparison",
+        "word_problems_1step",
+        "word_problems_2step"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "default": "medium"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "number"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "current_question_index": {
+      "type": "number",
+      "default": 0
+    },
+    "winner_id": {
+      "type": "string"
+    },
+    "winner_name": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "finished_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "room_code",
+    "topic",
+    "difficulty"
+  ]
+}
