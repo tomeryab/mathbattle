@@ -6,7 +6,7 @@
     <link rel="manifest" href__="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomer Yablonka - Math Battle</title>
-    <script type="module" crossorigin src="/assets/index-D4PjVZ_K.js"></script>
+    <script type="module" crossorigin src="/assets/index-BujmgrHh.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Kf2pyNOW.css">
     <script type="module">
 if (window.self === window.top) {
@@ -22,7 +22,7 @@ if (window.self === window.top) {
     const pageName = getPageNameFromPath(path) || "home";
     const appId = "";
     if (!appId) return;
-    fetch(`/app-logs/${appId}/log-user-in-app/${pageName}`, {
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
       method: "POST",
     }).catch(() => {});
   }
